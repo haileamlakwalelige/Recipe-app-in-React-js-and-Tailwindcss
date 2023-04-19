@@ -1,4 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React,{useState, useEffect} from 'react';
 import Card from "./Card";
 import Popular from "./Popular";
@@ -7,7 +9,7 @@ import Footer from './Footer';
 
 
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 function App() {
     const [show, setShow]=useState(false);
     const [menu, setMenu]=useState(false);
@@ -26,13 +28,7 @@ function App() {
           window.removeEventListener("resize", handleResize);
         };
       }, []);
-    //   const handleMenu=()=>{
-    //     if(windowWidth < 768){
-    //         setMenu(true);
-    //     }else{
-    //         setMenu(false);
-    //     }
-    //   }
+
    
   return (
     <div className="grid md:grid-cols-3 cursor-pointer sms:grid-cols-1">
